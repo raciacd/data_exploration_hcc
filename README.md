@@ -85,12 +85,12 @@ A summary table and bar chart compare the performance of the three models based 
 
 This project was supervised by:
 
-Pedro Gabriel Dias Ferreira
+- Professor Pedro Gabriel Dias Ferreira
 
-and developed by:
+and developed by FCUP students:
 
-Guilherme Kotchergenko Batista
+- Guilherme Kotchergenko Batista
 
-Rafael Arruda Costa
+- Rafael Arruda Costa
 
-Yan de Oliveira Christiano Coelho
+- Yan de Oliveira Christiano Coelho
