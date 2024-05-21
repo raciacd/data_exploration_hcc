@@ -42,7 +42,7 @@ pip install pandas numpy scikit-learn matplotlib seaborn
 
 ## Project Structure
 
-- `Checkpoint1.ipynb`: Jupyter notebook containing the code for the project.
+- `final_hcc.ipynb`: Jupyter notebook containing the code for the project.
 - `hcc_dataset.csv`: Dataset used for the project.
 
 ## Usage
@@ -56,7 +56,7 @@ pip install pandas numpy scikit-learn matplotlib seaborn
 
 2. **Run the Jupyter Notebook**:
 
-   Open `Checkpoint1.ipynb` in Jupyter Notebook or Jupyter Lab and execute the cells to run the project.
+   Open `final_hcc.ipynb` in Jupyter Notebook or Jupyter Lab and execute the cells to run the project.
 
 ## Results
 
@@ -76,11 +76,12 @@ A summary table and bar chart compare the performance of the three models based 
 
 ## Bibliography
 
-- Professor Pedro Gabriel Dias Ferreira’s EIACD notebook
+- Professor Pedro Gabriel Dias Ferreira’s Elements of AI and Data Science notebook
 - Scikit-learn.org user guide
 - Pandas.pydata.org user guide
 - OpenAI ChatGPT – code supervision
-
+- Santos, M. et al. “A new cluster-based oversampling method for improving survival prediction of hepatocellular carcinoma patients.” Journal of biomedical informatics 58 (2015): 49–59. https://www.sciencedirect.com/science/article/pii/S1532046415002063
+- 
 ## Project Supervision and Contribution
 
 This project was supervised by:
