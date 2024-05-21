@@ -81,7 +81,7 @@ A summary table and bar chart compare the performance of the three models based 
 - Pandas.pydata.org user guide
 - OpenAI ChatGPT – code supervision
 - Santos, M. et al. “A new cluster-based oversampling method for improving survival prediction of hepatocellular carcinoma patients.” Journal of biomedical informatics 58 (2015): 49–59. https://www.sciencedirect.com/science/article/pii/S1532046415002063
-- 
+
 ## Project Supervision and Contribution
 
 This project was supervised by:
