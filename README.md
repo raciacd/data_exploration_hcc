@@ -1,6 +1,6 @@
 # Hepatocellular Carcinoma (HCC) Survival Prediction
 
-This project aims to predict the survival outcome (Dies or Lives) of patients with Hepatocellular Carcinoma (HCC) using various machine learning models. The dataset used contains medical and demographic information about the patients.
+This project aims to enhance understanding of data visualization, preprocessing, and the prediction of survival outcomes (Dies or Lives) for patients with Hepatocellular Carcinoma (HCC) using various machine learning models. The dataset includes medical and demographic information collected from patients at the Coimbra Hospital and University Center (CHUC) in Portugal, containing real clinical data of individuals diagnosed with HCC.
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -13,7 +13,7 @@ This project aims to predict the survival outcome (Dies or Lives) of patients wi
 
 ## Introduction
 
-Hepatocellular Carcinoma (HCC) is a common type of liver cancer. This project uses machine learning techniques to predict whether a patient with HCC will survive or not based on their medical and demographic data.
+Hepatocellular Carcinoma (HCC) is a common and aggressive type of liver cancer, often diagnosed in later stages due to subtle early symptoms. This project leverages machine learning techniques to predict the survival outcomes (Dies or Lives) of patients diagnosed with HCC. By analyzing a comprehensive dataset that includes both medical and demographic information, the project aims to provide insights into the factors that influence survival and improve prognostic accuracy for HCC patients.
 
 ## Dataset
 
@@ -24,14 +24,16 @@ The dataset used in this project is `hcc_dataset.csv`, which contains the follow
 
 ## Dependencies
 
-The project requires the following Python libraries:
+The project requires the following Python libraries, all of which are included in the ANACONDA package:
 - `pandas`
 - `numpy`
 - `scikit-learn`
 - `matplotlib`
 - `seaborn`
 
-You can install the dependencies using `pip`:
+You can install the ANACONDA package at [Anaconda Download page](https://www.anaconda.com/products/distribution) and the appropriate installer for your operating system.
+
+You can also install the dependencies using `pip`:
 
 ```bash
 pip install pandas numpy scikit-learn matplotlib seaborn
@@ -51,13 +53,7 @@ pip install pandas numpy scikit-learn matplotlib seaborn
    cd HCC-Survival-Prediction
 ```
 
-2. **Install dependencies**:
-
-```bash
-   pip install pandas numpy scikit-learn matplotlib seaborn
-```
-
-3. **Run the Jupyter Notebook**:
+2. **Run the Jupyter Notebook**:
 
    Open `Checkpoint1.ipynb` in Jupyter Notebook or Jupyter Lab and execute the cells to run the project.
 
@@ -76,15 +72,3 @@ The models are evaluated based on the following metrics:
 ### Model Comparison
 
 A summary table and bar chart compare the performance of the three models based on the evaluation metrics mentioned above.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-This README provides an overview of the project, including its purpose, dataset, dependencies, usage instructions, and evaluation results. If you have any questions or issues, please feel free to open an issue on GitHub.
-
----
-
-**Note**: Remember to update the GitHub URL and other placeholders with actual values specific to your project.
