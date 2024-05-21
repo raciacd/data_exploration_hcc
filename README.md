@@ -9,7 +9,8 @@ This project aims to enhance understanding of data visualization, preprocessing,
 - [Project Structure](#project-structure)
 - [Usage](#usage)
 - [Results](#results)
-- [License](#license)
+- [Bibliography](#bibliography)
+- [Team](#project-supervision-and-contribution)
 
 ## Introduction
 
@@ -72,3 +73,24 @@ The models are evaluated based on the following metrics:
 ### Model Comparison
 
 A summary table and bar chart compare the performance of the three models based on the evaluation metrics mentioned above.
+
+## Bibliography
+
+- Professor Pedro Gabriel Dias Ferreira’s EIACD notebook
+- Scikit-learn.org user guide
+- Pandas.pydata.org user guide
+- OpenAI ChatGPT – code supervision
+
+## Project Supervision and Contribution
+
+This project was supervised by:
+
+Pedro Gabriel Dias Ferreira
+
+and developed by:
+
+Guilherme Kotchergenko Batista
+
+Rafael Arruda Costa
+
+Yan de Oliveira Christiano Coelho
