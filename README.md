@@ -1,97 +1,215 @@
-# Hepatocellular Carcinoma (HCC) Survival Prediction
+# Hepatocellular Carcinoma (HCC) Survival Prediction 🏥
 
-This project aims to enhance understanding of data visualization, preprocessing, and the prediction of survival outcomes (Dies or Lives) for patients with Hepatocellular Carcinoma (HCC) using various machine learning models. The dataset includes medical and demographic information collected from patients at the Coimbra Hospital and University Center (CHUC) in Portugal, containing real clinical data of individuals diagnosed with HCC.
+A ML project for predicting survival outcomes in patients with Hepatocellular Carcinoma (HCC) using clinical and demographic data. This project demonstrates professional data science practices including modular code architecture, comprehensive testing, and reproducible workflows.
 
-## Table of Contents
-- [Introduction](#introduction)
+## 📋 Table of Contents
+- [Overview](#overview)
+- [Features](#features)
 - [Dataset](#dataset)
-- [Dependencies](#dependencies)
+- [Installation](#installation)
+- [Quick Start](#quick-start)
 - [Project Structure](#project-structure)
 - [Usage](#usage)
 - [Results](#results)
-- [Bibliography](#bibliography)
-- [Team](#project-supervision-and-contribution)
+- [Contributing](#contributing)
+- [License](#license)
+- [Team](#team)
 
-## Introduction
+## 🎯 Overview
 
-Hepatocellular Carcinoma (HCC) is a common and aggressive type of liver cancer, often diagnosed in later stages due to subtle early symptoms. This project leverages machine learning techniques to predict the survival outcomes (Dies or Lives) of patients diagnosed with HCC. By analyzing a comprehensive dataset that includes both medical and demographic information, the project aims to provide insights into the factors that influence survival and improve prognostic accuracy for HCC patients.
+HCC is a common and aggressive type of liver cancer, often diagnosed in later stages due to subtle early symptoms. This project leverages machine learning techniques to predict the survival outcomes (Alive or Dead) of patients diagnosed with HCC.
 
-## Dataset
+**Key Objectives:**
+- 📊 Analyze medical and demographic data from HCC patients
+- 🤖 Build and compare ML models
+- 📈 Identify key factors influencing patient survival
+- 🎯 Provide accurate prognostic predictions
 
-The dataset used in this project is `hcc_dataset.csv`, which contains the following information:
-- Medical history and demographic data of patients
-- Various medical test results
-- Survival outcome (Dies or Lives)
+## ✨ Features
 
-## Dependencies
+- **Modular Code Architecture**: Clean, reusable Python modules for preprocessing, training, and evaluation
+- **Multiple ML Models**: Random Forest, Decision Tree, and K-NN classifiers
+- **Comprehensive Evaluation**: Confusion matrices, ROC curves, classification reports, and model comparison
+- **Feature Importance Analysis**: Identify the most predictive clinical features
+- **Reproducible Workflow**: Consistent random seeds and documented preprocessing steps
 
-The project requires the following Python libraries, all of which are included in the ANACONDA package:
-- `pandas`
-- `numpy`
-- `scikit-learn`
-- `matplotlib`
-- `seaborn`
+## 📊 Dataset
 
-You can install the ANACONDA package at [Anaconda Download page](https://www.anaconda.com/products/distribution) and the appropriate installer for your operating system.
+The dataset (`hcc_dataset.csv`) contains real clinical data from **165 patients** diagnosed with HCC at the **Coimbra Hospital and University Center (CHUC)** in Portugal.
 
-You can also install the dependencies using `pip`:
+**Dataset Characteristics:**
+- **Samples**: 165 patients
+- **Features**: 49 clinical and demographic variables
+- **Target**: Binary classification (Alive or Dead)
+- **Source**: CHUC, Portugal
 
+**Key Features Include:**
+- Demographic information (age, gender)
+- Medical history (symptoms, risk factors)
+- Laboratory test results (AFP, bilirubin, albumin, etc.)
+- Tumor characteristics
+
+> **Note**: This dataset contains anonymized patient information.
+
+## 🚀 Installation
+
+### Prerequisites
+- Python 3.9 or higher
+
+### Step-by-Step Installation
+
+1. **Clone the repository**
 ```bash
-pip install pandas numpy scikit-learn matplotlib seaborn
+git clone https://github.com/GuilhermeKotchergenko/data_exploration_hcc.git
+cd data_exploration_hcc
 ```
 
-## Project Structure
-
-- `final_hcc.ipynb`: Jupyter notebook containing the code for the project.
-- `hcc_dataset.csv`: Dataset used for the project.
-
-## Usage
-
-1. **Clone the repository**:
-
+2. **Create a virtual environment** (recommended)
 ```bash
-   git clone https://github.com/your-username/HCC-Survival-Prediction.git
-   cd HCC-Survival-Prediction
+# On Linux/Mac
+python3 -m venv venv
+source venv/bin/activate
+
+# On Windows
+python -m venv venv
+venv\Scripts\activate
 ```
 
-2. **Run the Jupyter Notebook**:
+3. **Install dependencies**
+```bash
+pip install -r requirements.txt
+```
 
-   Open `final_hcc.ipynb` in Jupyter Notebook or Jupyter Lab and execute the cells to run the project.
+## ⚡ Quick Start
 
-## Results
+### Using Jupyter Notebooks
 
-The project evaluates three machine learning models:
-- Random Forest
-- Decision Tree
-- K-Nearest Neighbors (KNN)
+```bash
+# Start Jupyter
+jupyter notebook
 
-The models are evaluated based on the following metrics:
-- Confusion Matrix
-- Classification Report (Precision, Recall, F1-Score)
-- ROC Curve and AUC
+# Open either:
+# - notebooks/final_hcc.ipynb (original analysis)
+# - notebooks/example_usage.ipynb (modular code demo)
+```
 
-### Model Comparison
+## 📁 Project Structure
 
-A summary table and bar chart compare the performance of the three models based on the evaluation metrics mentioned above.
+```
+data_exploration_hcc/
+├── data/
+│   ├── raw/                    # Original dataset
+│   │   └── hcc_dataset.csv
+│   ├── processed/              # Preprocessed data (generated)
+│   └── README.md
+├── notebooks/
+│   ├── final_hcc.ipynb         # Original comprehensive analysis
+│   └── example_usage.ipynb     # Modular code usage example
+├── src/                        # Source code modules
+│   ├── __init__.py
+│   ├── data_preprocessing.py   # Data loading and preprocessing
+│   ├── model_training.py       # Model training functions
+│   ├── evaluation.py           # Evaluation and visualization
+│   └── utils.py                # Utility functions
+├── models/                     # Saved trained models (generated)
+├── results/                    # Evaluation results (generated)
+│   ├── figures/                # Plots and visualizations
+│   └── metrics/                # Performance metrics
+├── tests/                      # Unit tests
+├── docs/                       # Documentation
+│   └── EIACD_Assignment2_2023_2024.pdf
+├── .gitignore
+├── requirements.txt            # Python dependencies
+├── LICENSE                     # MIT License
+└── README.md                   # This file
+```
 
-## Bibliography
+## 📈 Results and Analysis
 
-- Professor Pedro Gabriel Dias Ferreira’s Elements of AI and Data Science notebook
-- Scikit-learn.org user guide
-- Pandas.pydata.org user guide
-- OpenAI ChatGPT – code supervision
-- Santos, M. et al. “A new cluster-based oversampling method for improving survival prediction of hepatocellular carcinoma patients.” Journal of biomedical informatics 58 (2015): 49–59. https://www.sciencedirect.com/science/article/pii/S1532046415002063
+### 1. Impact of Feature Engineering
 
-## Project Supervision and Contribution
+We implemented:
+- **Interaction Terms**: e.g., `Age * AFP` (capturing combined risk factors)
+- **Log Transformations**: normalizing skewed distributions like `AFP`, `Creatinine`, `Ferritin`
+- **Binning**: categorizing continuous variables like `Age` into risk groups
 
-This project was supervised by:
+**Performance Comparison (F1-Score):**
 
-- Professor Pedro Gabriel Dias Ferreira
+| Model | Baseline F1 | Enhanced F1 | Improvement |
+|-------|-------------|-------------|-------------|
+| **Random Forest** | 0.5941 | **0.8149** | **+22.08%** |
+| K-Nearest Neighbors | 0.6455 | 0.6973 | +5.18% |
+| Decision Tree | **0.7599** | 0.6398 | -12.01% |
 
-and developed by FCUP students:
+> **Key Takeaway**: Feature engineering was highly successful for the Random Forest model, transforming it from the worst-performing baseline model to the best-performing enhanced model.
 
-- Guilherme Kotchergenko Batista
+### 2. Deep Dive: Model Behavior Analysis
 
-- Rafael Arruda Costa
+**Why Random Forest Improved (+22%):**
+- **Ensemble Power**: Random Forest aggregates predictions from many trees, allowing it to leverage the strong signals from engineered features (like interaction terms) while averaging out the noise.
+- **Handling Complexity**: It effectively captured non-linear relationships introduced by log transforms and interactions without overfitting.
 
-- Yan de Oliveira Christiano Coelho
+**Why Decision Tree Worsened (-12%):**
+- **Overfitting**: Single decision trees are prone to overfitting. The addition of many new correlated features (e.g., predictors + their log versions) likely caused the tree to split on noise or redundant information.
+- **Greedy Splitting**: The tree might have prioritized a new feature that worked well for a specific training subset but failed to generalize, unlike the robust consensus mechanism of the Random Forest.
+
+### 3. Top Predictive Features
+
+The analysis identified key biological drivers of survival prediction. The top features for the best-performing Random Forest model were primarily **engineered features**, validating our approach:
+
+1.  **Age_AFP_Interaction**: Combined effect of patient age and Alpha-fetoprotein levels.
+2.  **Log_AFP**: Log-transformed Alpha-fetoprotein (handling derived skewness).
+3.  **AFP_Level**: Categorical risk bucket for AFP.
+4.  **Age_Group**: Categorical risk bucket for Age.
+5.  **Log_Creatinine**: Log-transformed kidney function metric.
+
+### Visualizations
+
+The project generates comprehensive visualizations including:
+- Confusion matrices for each model
+- ROC curves with AUC scores
+- Feature importance plots (highlighting the dominance of engineered features)
+
+All visualizations are saved to `results/figures/` when running the evaluation pipeline.
+
+## 🤝 Contributing
+
+Contributions are welcome! If you'd like to improve this project:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/improvement`)
+3. Commit your changes (`git commit -m 'Add some improvement'`)
+4. Push to the branch (`git push origin feature/improvement`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👥 Team
+
+This project was developed by FCUP (Faculty of Sciences, University of Porto) students:
+
+- **Guilherme Kotchergenko Batista**
+- **Rafael Arruda Costa**
+- **Yan de Oliveira Christiano Coelho**
+
+**Supervised by**: Professor Pedro Gabriel Dias Ferreira
+
+## 📚 References
+
+- Santos, M. et al. "A new cluster-based oversampling method for improving survival prediction of hepatocellular carcinoma patients." *Journal of Biomedical Informatics* 58 (2015): 49–59. [Link](https://www.sciencedirect.com/science/article/pii/S1532046415002063)
+- [Scikit-learn Documentation](https://scikit-learn.org/stable/user_guide.html)
+- [Pandas Documentation](https://pandas.pydata.org/docs/user_guide/index.html)
+
+## 🙏 Acknowledgments
+
+- Coimbra Hospital and University Center (CHUC) for providing the dataset
+- Professor Pedro Gabriel Dias Ferreira for supervision and guidance
+- OpenAI ChatGPT for code review and assistance
+
+---
+
+**⭐ If you find this project useful, please consider giving it a star!**
+
+For questions or feedback, please open an issue on GitHub.
